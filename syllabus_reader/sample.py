@@ -16,6 +16,8 @@ pageObj = pdfReader.getPage(2)
 # extracting text from page
 page_str = pageObj.extractText()
 page_str = page_str.split(" ")
+for string in page_str:
+    string = string.strip('\n')
 print(repr(page_str))
 print(type(pageObj.extractText()))
 

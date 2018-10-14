@@ -75,7 +75,9 @@
             <!-- Input file button -->
             <div class="container">
               <div class="col-md-8 col-md-offset-2">
-              <form method="POST" action="/info/" enctype="multipart/form-data">
+              <form method="POST" action="/button/" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form }}
               	<!-- COMPONENT START -->
               	<div class="form-group">
               		<div class="input-group input-file" name="Fichier1">
@@ -91,7 +93,6 @@
               	<!-- COMPONENT END -->
               	<div class="form-group">
               		<button type="submit" class="btn btn-primary pull-right">Submit</button>
-              		<button type="reset" class="btn btn-danger">Reset</button>
               	</div>
               </form>
 
@@ -129,7 +130,7 @@
           <div class="col-lg-4 mr-auto text-center">
             <i class="fas fa-envelope fa-3x mb-3 sr-contact-2"></i>
             <p>
-              <a href="mailto:your-email@your-domain.com">students@usc.edu.com</a>
+              <a href="mailto:your-email@your-domain.com">students@usc.edu</a>
             </p>
           </div>
         </div>
