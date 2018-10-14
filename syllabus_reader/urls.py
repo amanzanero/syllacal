@@ -1,6 +1,7 @@
-from django.urls import path, re_path, include
+from django.urls import path
 from . import views
 
 urlpatterns = [
     path('', views.index, name='index'),
+    path('info/', views.upload_file, name='upload')
 ]
