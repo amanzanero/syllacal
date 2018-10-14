@@ -23,11 +23,11 @@ $ git clone https://github.com/amanzanero/syllacal
 ```
 Install dependencies:
 ```
-pip install -r requirements.txt
+$ pip install -r requirements.txt
 ```
 Run with: 
 ```
-python manage.py runserver
+$ python manage.py runserver
 ```
 
 ## Credits
