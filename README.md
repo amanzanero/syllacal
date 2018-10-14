@@ -1,4 +1,4 @@
-# syllacal
+# syllacal ![CI status](https://img.shields.io/badge/not%20running-red.svg)
 
 ## Pitch
 Syllacal is a web service that imports all the vital exam dates and deadlines from your syllabus into your calendar. First, Syllacal scans your given PDF. Then, it exports relevant information surrounding a date (ex. 09/10, 09-10, September 10) to an .ics file. This can be added to your calendar (iCalendar, Google Calendar, and more).
@@ -14,8 +14,21 @@ This repo contains the full stack for a 24-hour long hackathon project by four s
 - CSS
 
 ## Setup
-After cloning, run *pip install -r requirements.txt* to get dependencies.
-Run with *python3 manage.py runserver*.
+Prerequisites:
+* python 3.6
+
+Cloning
+```
+$ git clone https://github.com/amanzanero/syllacal
+```
+```
+pip install -r requirements.txt
+```
+to get dependencies.
+Run with: 
+```
+python3 manage.py runserver
+```
 
 ## Credits
 Web template take from [https://github.com/BlackrockDigital/startbootstrap-creative](https://github.com/BlackrockDigital/startbootstrap-creative).
