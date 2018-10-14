@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Creative - Start Bootstrap Theme</title>
+    <title>Syllacal</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -31,14 +31,14 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Syllacal</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+              <a class="nav-link js-scroll-trigger" href="#about">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#services">Services</a>
@@ -59,13 +59,13 @@
         <div class="row">
           <div class="col-lg-10 mx-auto">
             <h1 class="text-uppercase">
-              <strong>Your Favorite Source of Free Bootstrap Themes</strong>
+              <strong>Your exam dates found for you</strong>
             </h1>
             <hr>
           </div>
           <div class="col-lg-8 mx-auto">
-            <p class="text-faded mb-5">Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
-            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+            <p class="text-faded mb-5">Syllacal is a free tool developed by students. It searches your syllabus for important dates and packages them up into an ICS (iCAL) file for Google Calendar, iCal, and more! </p>
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Begin!</a>
           </div>
         </div>
       </div>
@@ -75,10 +75,38 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading text-white">We've got what you need!</h2>
+            <h2 class="section-heading text-white">Step 1: Upload a syllabus!</h2>
             <hr class="light my-4">
-            <p class="text-faded mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
-            <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>
+            <p class="text-faded mb-4">Accepts PDF files.</p>
+
+            <!-- Input file button -->
+            <div class="container">
+              <div class="col-md-8 col-md-offset-2">
+              <form method="POST" action="#" enctype="multipart/form-data">
+              	<!-- COMPONENT START -->
+              	<div class="form-group">
+              		<div class="input-group input-file" name="Fichier1">
+              			<span class="input-group-btn">
+                      		<button class="btn btn-default btn-choose" type="button">Choose</button>
+                  		</span>
+                  		<input type="text" class="form-control" placeholder='Choose a file...' />
+                  		<span class="input-group-btn">
+                     			 <button class="btn btn-warning btn-reset" type="button">Reset</button>
+                  		</span>
+              		</div>
+              	</div>
+              	<!-- COMPONENT END -->
+              	<div class="form-group">
+              		<button type="submit" class="btn btn-primary pull-right">Submit</button>
+              		<button type="reset" class="btn btn-danger">Reset</button>
+              	</div>
+              </form>
+
+              </div>
+              </div>
+
+              <!-- End input file button -->
+
           </div>
         </div>
       </div>
@@ -127,7 +155,7 @@
       </div>
     </section> -->
 
-    <section class="p-0" id="portfolio">
+    <!-- <section class="p-0" id="portfolio">
       <div class="container-fluid p-0">
         <div class="row no-gutters popup-gallery">
           <div class="col-lg-4 col-sm-6">
@@ -222,12 +250,12 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section class="bg-dark text-white">
       <div class="container text-center">
-        <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
-        <a class="btn btn-light btn-xl sr-button" href="http://startbootstrap.com/template-overviews/creative/">Download Now!</a>
+        <h2 class="mb-4">Step 2: Get your iCal file!</h2>
+        <a class="btn btn-light btn-xl sr-button" href="http://www.smbc-comics.com/comics/1538358391-20181001.png" download>Download Now!</a>
       </div>
     </section>
 
@@ -235,9 +263,9 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading">Let's Get In Touch!</h2>
+            <h2 class="section-heading">Questions or feedback?</h2>
             <hr class="my-4">
-            <p class="mb-5">Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+            <!-- <p class="mb-5"></p> -->
           </div>
         </div>
         <div class="row">
@@ -266,6 +294,7 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/creative.min.js"></script>
+    <script src = "js/input_file.js"></script>
 
   </body>
 
