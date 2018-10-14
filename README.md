@@ -17,17 +17,17 @@ This repo contains the full stack for a 24-hour long hackathon project by four s
 Prerequisites:
 * python 3.6
 
-Cloning
+Cloning:
 ```
 $ git clone https://github.com/amanzanero/syllacal
 ```
+Install dependencies:
 ```
 pip install -r requirements.txt
 ```
-to get dependencies.
 Run with: 
 ```
-python3 manage.py runserver
+python manage.py runserver
 ```
 
 ## Credits
